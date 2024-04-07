@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <h1>AMS</h1>
+        </div>
+        <div class="nav-right">
+            <a class="al" href="#click1">Home</a>
+            <a class="al" href="#click2">About</a>
+            <a class="al" href="#click3">Events</a>
+            <a class="al" href="#click4">Gallery</a>
+            <a class="al" href="#click5">Admin / Alumni / Student</a>
+        </div>
+        </div>
+        <div class="home" id="click1">
+            <center><h1 id="click1">Welcome To Alumini Management System</h1></center><br><br>
+            <center><h2 id="click1">Managed by Department Of Alumni <br>Vignan's Lara Institute Of Technology & Science,Vadlamudi</h2></center><br><br>
+        </div>
+        <div class="blank" id="click2">
+            <h1>......</h1>
+        </div>
+        <div class="about">
+            <div class="about1">
+                <center><h1>About Us</h1></center><br>
+            </div>
+            <div class="about2">
+                <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007.</p><br>
+                <center><h2>Vision</h2><br></center>
+                <p>To evolve into a Centre of Excellence in Science and Technology for producing globally acclaimed professionals who are psychologically strong, emotionally balanced and guided by social consciousness and ethical values.</p><br>
+                <center><h2>Mission</h2><br></center>
+                <p>
+                    To maintain a supportive and vibrant campus environment through Co-Curricular and Extra Curricular for the all-round development of students into confident professionals and responsible team leaders.<br>
+                    To sensitize students on societal issues and encourage them to explore solutions for the problems identified.
+                </p>
+            </div>
+        </div><br><br><br><br>
+        <div class="blank1">
+            <h1>.......</h1>
+        </div>
+        <div class="events" id="click3">
+            <div class="event1">
+                <center><h1>Events</h1></center>
+            </div>
+            </div>
+            <div class="event">
+            <div class="event2">
+                <h1>Previous Events</h1><br>
+                <h3>January</h3><br>
+                <h2>10-1-2024-Sports Meet</h2>
+                <h2>13-1-2024-Sankranthi celebration</h2>
+                <h2>18-1-2024-Hackathon</h2>
+                <h2>26-1-2024-Republic day</h2><br>
+                <h3>February</h3><br>
+                <h2>01-02-2024-Mahostav</h2>
+                <h2>06-02-2024-Hackthon</h2>
+                <h2>18-02-2024-Nacc Audit</h2>
+                <h2>26-02-2024-Republic day</h2>
+                <h3>March</h3><br>
+                <h2>01-02-2024-Shivarathri Celebrations</h2>
+                <h2>06-02-2024-IT Workshop</h2>
+                <h2>18-02-2024-Mentor Classes</h2>
+            </div>
+            <div class="event3">
+                <h1>Current Events</h1><br>
+                <h3>April</h3><br>
+                <h2>1-04-2024-AWS Training</h2>
+                <h2>09-04-2024-Ugadhi Celebrations</h2>
+                <h2>11-04-2024-Ramzan celebrations</h2>
+                <h2>18-04-2024-CSE-Workshop</h2><br>
+                <h2>24-04-2024-hackathon</h2><br>
+            </div>
+            <div class="event4">
+                <h1>Upcoming Events</h1><br>
+                <h3>June</h3><br>
+                <h2>15-05-2024-Mentor Classes</h2>
+                <h2>20-05-2024-Project Expo</h2><br>
+                <h3>July</h3><br>
+                <h2>14-06-2024-Chairman's Birthday Celebrations</h2>
+                <h2>18-06-2024-Alumni Meet</h2>
+                <h2>24-06-2024-Inauguration Of batter cars</h2>
+            </div>
+        </div>
+        <div class="g1" id="click4">
+            <center><h1>Gallery</h1></center>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery">
+              <img src="https://res.cloudinary.com/dt8ml2dde/image/upload/v1712392381/mf64vaq1ifskhdsr9byo.webp" alt="Image 1">
+              <img src="https://res.cloudinary.com/dt8ml2dde/image/upload/v1712392477/ancaczuc8sap6heaksw9.jpg" alt="Image 2">
+              <img src="https://res.cloudinary.com/dt8ml2dde/image/upload/v1712392535/kwuwhlcs36vjtkx4px1o.jpg" alt="Image 3">
+              <img src="https://res.cloudinary.com/dt8ml2dde/image/upload/v1712392589/y73112uaxqvafn2dovpo.jpg" alt="Image 4">
+            </div>
+          </div><br><br><br><br>
+          <div class="amsb" id="click5">
+            <center><h1>Select Type</h1></center>
+          </div>
+          <div class="amsbutton">
+            <button onclick="window.location.href='adminpanel'"> Admin</button>
+            <button onclick="window.location.href='alumnisignup'"> Alumni</button>
+            <button onclick="window.location.href='studentsignup'"> Student</button>
+          </div>
+          <footer>
+            <center><p>All Copyrights belongs To AMS</p></center>
+          </footer>
+</body>
+</html>

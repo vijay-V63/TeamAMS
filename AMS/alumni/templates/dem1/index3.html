@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collage website</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+<div class="all">
+    <center><div class="home">
+        <h1>Alumni Management System</h1>
+    </div>
+    <form method="POST" action="alumnilogin">
+        {%csrf_token%}
+    <div class="login">
+        <h1>ALUMNI LOGIN</h1>
+        <input type="email" placeholder="E-Mail" required name="email">
+        <input type="password" placeholder="Password" required name="password">
+        <button onclick="window.location.href='alumnimain'">Submit</button>
+    </div></center>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentGuideR20</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    <center><div class="home">
+        <h1>Alumni Management System</h1>
+    </div>
+    <form method="POST" action="alumnisignup">
+        {%csrf_token%}
+    <div class="signup">
+        <h1>ALUMNI SIGN UP</h1>
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="email" placeholder="E-Mail" name="email" required >
+        <input type="text" placeholder="Mobile No." name="mobileno" required>
+        <input type="password" placeholder="Password" name="password" required >
+        <button >Sign-up</button></br>
+        <button onclick="window.location.href='alumnilogin'">Already Registered</button>
+    </div></form></center>
+</body>
+</html>

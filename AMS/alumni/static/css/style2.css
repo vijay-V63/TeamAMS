@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://res.cloudinary.com/dt8ml2dde/image/upload/v1712398806/ilrffbs0iwlokvaqpghj.png");
+    color: #000000;
+}
+
+.signup input {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 50px;
+    padding-right: 120px;
+}
+
+.home h1 {
+    padding-top: 20vh;
+}
+
+.signup button {
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .signup input {
+        flex-direction: column;
+        margin: 10px;
+        padding-right: 10px;
+    }
+
+    .signup button {
+        padding: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .home h1 {
+        padding-top: 10vh;
+    }
+}

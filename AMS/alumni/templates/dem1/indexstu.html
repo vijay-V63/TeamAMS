@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    THis is student page</br>
+    <table border="5">
+        <tr>
+            <td>Name</td>
+            <td>regdno</td>
+            <td>image</td>
+            <td>Branch</td>
+            <td>fee</td>
+        </tr>
+        {%for i in stud%}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.regdno}}</td>
+            <td><img src="{{i.profileimg.url}}" width="100px" heigth="100px"></td>
+            <td>{{i.category}}</td>
+            <td>{{i.fee}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</body>
+</html>
